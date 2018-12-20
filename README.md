@@ -3,7 +3,7 @@
 Angular CLI Docker image
 
 - node: 10.14.2 (LTS)
-- angular-cli: 7.1.3
+- angular-cli: 7.1.4
 
 
 ### Links
@@ -12,3 +12,13 @@ Angular CLI Docker image
 - **Nodejs**: https://nodejs.org/en/
 - **Angular CLI**: https://github.com/angular/angular-cli	
  
+### Examplas
+
+##### Create a new project in current directory
+$ docker run -it --rm -v $(pwd):/opt/app osvaldotulini/ng-cli ng new <APP NAME> --directory="opt/app"
+
+##### Add new angular component
+$ docker run -it --rm -w /opt/app -v $(pwd):/opt/app osvaldotulini/ng-cli sh -c 'ng g c new-component'
+
+##### Run app
+$ docker run -it --rm -w /opt/app -v $(pwd):/opt/app -p 4200:4200 osvaldotulini/ng-cli sh -c 'ng serve --host 0.0.0.0'
