@@ -2,8 +2,8 @@
 
 Angular CLI Docker image
 
-- node: 10.14.2 (LTS)
-- angular-cli: 7.1.4
+- node: 10.15.0 (LTS)
+- angular-cli: 7.2.1
 
 
 ### Links
@@ -12,7 +12,7 @@ Angular CLI Docker image
 - **Nodejs**: https://nodejs.org/en/
 - **Angular CLI**: https://github.com/angular/angular-cli	
  
-### Examplas
+### Usage Examples
 
 ##### Create a new project in current directory
 $ docker run -it --rm -v $(pwd):/opt/app osvaldotulini/ng-cli ng new <APP NAME> --directory="opt/app"
