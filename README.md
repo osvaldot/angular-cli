@@ -3,7 +3,7 @@
 Angular CLI Docker image
 
 - node: 10.15.0 (LTS)
-- angular-cli: 7.2.2
+- angular-cli: 7.2.3
 
 
 ### Links
