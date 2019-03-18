@@ -1,7 +1,7 @@
 FROM node:10.15.2-alpine
 LABEL maintainer osvaldo.tulini@gmail.com
 
-ENV ANGULAR_CLI 7.3.5
+ENV ANGULAR_CLI 7.3.6
 
 # Install angular-cli
 RUN npm install -g @angular/cli@${ANGULAR_CLI}
